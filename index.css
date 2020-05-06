@@ -72,7 +72,6 @@ h1 {
     font-size: calc(3vw + 2rem);
     font-weight: 100;
     text-transform: uppercase;
-    letter-spacing: -.05em;
 }
 
 p:last-child {
@@ -80,28 +79,29 @@ p:last-child {
 } 
 
 legend {
-    position: fixed;
+    float: right;
+    margin-left: 20rem;
+    position: absolute;
     margin-top: initial;
     font-size: .8em;
     text-align: left;
     flex-basis: 13.5rem;
 }
 
-/* table, */
 tbody {
-    flex-wrap: wrap;
-    position: sticky;
     top: 1em;
+    display: inline-block;
     justify-content: center;
-    /* margin-left: 50%; */
 }
 
-th, tr{
-
+th{
+    text-align: center;
+    text-transform: uppercase;
 }
-td {
-    /* line-height: 1.25;
-    margin-top: 3em; */
+th, td{
+    font-weight: bold;
+    padding: 1em;
+    width: min-content;
 }
 
 .margin-top1{
@@ -115,21 +115,19 @@ td {
 /* Crio a box vazia antes do nome da classe */
 
 td:before {
-    content: ' ';
+    content: attr(sign);
+    text-align: center;
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: auto;
+    min-width: 1.25em;
+    height: 100%;
+    min-height: 1.25em;
     border: .125em solid;
     border-radius: .125rem;
     margin-right: .5em;
     position: relative;
-    top: .25em;
-    background: inherit;
+    top: .23em;
 }
-
-/* tr + tr {
-    margin-left: 2em;
-} */
 
 /* Classes elementares */
 
@@ -152,6 +150,10 @@ td:before {
 .semimetal {
     background-color: rgb(110, 200, 190);
 }
+
+/* .semimetal:hover ~ .semimetal{
+    background-color: red;
+} */
 
 .halogenio {
     background-color: rgb(170, 225, 255);

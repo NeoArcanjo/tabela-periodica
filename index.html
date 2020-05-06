@@ -13,53 +13,48 @@
     <h1>Tabela Periódica</h1>
     <main>
 
-        <!-- Legenda -->
         <legend>
-            <table style="margin-left: 350px;">
+            <table>
                 <tbody>
                     <tr>
+                        <th colspan="2">Classes</th>
+                        <th>Estado na natureza</th>
+                    </tr>
+
+                    <tr>
                         <td class="metal-alcalino">Metais Alcalinos</td>
-                        <td class="col-hidden col-span1"></td>
                         <td class="outros-metais">Metais Representativos</td>
-                        <td class="col-hidden col-span2"></td>
-                        <td class="solido">Sólido</td>
+                        <td class="solido" sign="C">Sólido</td>
                     </tr>
                     <tr>
                         <td class="metal-alcalino-terroso">Metais Alcalino-Terrosos</td>
-                        <td class="col-hidden col-span1"></td>
                         <td class="semimetal">Semimetais</td>
-                        <td class="col-hidden col-span2"></td>
-                        <td class="liquido">Líquido</td>
+                        <td class="liquido" sign="Hg">Líquido</td>
                     </tr>
 
                     <tr>
                         <td class="metal-transicao">Metais de Transição</td>
-                        <td class="col-hidden col-span1"></td>
                         <td class="nao-metal">Não-Metais</td>
-                        <td class="col-hidden col-span2"></td>
-                        <td class="gasoso">Gasoso</td>
+                        <td class="gasoso" sign="H">Gasoso</td>
                     </tr>
 
                     <tr>
                         <td class="lantanideo">Lantanídeos</td>
-                        <td class="col-hidden col-span1"></td>
                         <td class="halogenio">Halogênios</td>
-                        <td class="col-hidden col-span2"></td>
-                        <td class="desconhecido">Desconhecido</td>
+                        <td class="desconhecido" sign="Rf">Desconhecido</td>
                     </tr>
 
                     <tr>
                         <td class="actinidio">Actinídios</td>
-                        <td class="col-hidden col-span1"></td>
                         <td class="gas-nobre gasoso">Gases Nobres</td>
                     </tr>
                 </tbody>
             </table>
-            </ul>
         </legend>
 
-
         <div id="grid-container">
+            <!-- Legenda -->
+        
             <!-- LINHA 1 -->
             <section class="nao-metal gasoso">
                 <span>1</span>
@@ -650,7 +645,7 @@
                 <p>[281]</p>
             </section>
 
-            <section class="metal-transicao">
+            <section class="metal-transicao desconhecido">
                 <span>112</span>
                 <h2>Cn</h2>
                 <p>Copernício</p><label hidden>by Rafael Arcanjo</label>
