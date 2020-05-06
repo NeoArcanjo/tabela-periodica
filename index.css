@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,700');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font: 1em/1 'Montserrat', sans-serif;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: .65em;
+    padding: 2em;
+}
+
+main{
+    max-width:130.5em;
+    display:block;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(18, 7em);
+    grid-gap: .25em;
+}
+
+.col-span16 {
+    grid-column: span 16;
+}
+
+.col-span10 {
+    grid-column: span 10;
+}
+
+.col-span2 {
+    grid-column: span 2;
+}
+
+.col-span1 {
+    grid-column: span 1;
+}
+
+.col-hidden {
+    display: block;
+    visibility: hidden;
+}
+
+section {
+    margin: 0;
+    height:7em;
+	background:rgb(0, 0, 0);	
+	border:.125rem solid;
+	border-radius:.25rem;	
+	line-height:1.25;
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+section:hover {
+    transition: .2s;
+    transform: scale(1.5);
+    cursor: pointer;
+    z-index: 2;
+}
+
+h1 {
+    margin: .5em 0;
+    font-size: calc(3vw + 2rem);
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: -.05em;
+}
+
+p:last-child {
+    font-size: .8em;
+} 
+
+legend {
+    position: fixed;
+    margin-top: initial;
+    font-size: .8em;
+    text-align: left;
+    flex-basis: 13.5rem;
+}
+
+/* table, */
+tbody {
+    flex-wrap: wrap;
+    position: sticky;
+    top: 1em;
+    justify-content: center;
+    /* margin-left: 50%; */
+}
+
+th, tr{
+
+}
+td {
+    /* line-height: 1.25;
+    margin-top: 3em; */
+}
+
+.margin-top1{
+    margin-top: 1rem;
+}
+
+.mark{
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+/* Crio a box vazia antes do nome da classe */
+
+td:before {
+    content: ' ';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: .125em solid;
+    border-radius: .125rem;
+    margin-right: .5em;
+    position: relative;
+    top: .25em;
+    background: inherit;
+}
+
+/* tr + tr {
+    margin-left: 2em;
+} */
+
+/* Classes elementares */
+
+.nao-metal{
+    background-color: rgb(180, 210, 100);
+}
+
+.gas-nobre {
+    background-color: rgb(100, 180, 225);
+}
+
+.metal-alcalino {
+    background-color: rgb(245, 200, 100);
+}
+
+.metal-alcalino-terroso {
+    background-color: rgb(240, 230, 90);
+}
+
+.semimetal {
+    background-color: rgb(110, 200, 190);
+}
+
+.halogenio {
+    background-color: rgb(170, 225, 255);
+}
+
+.outros-metais {
+    background-color: rgb(190, 210, 210);
+}
+
+.metal-transicao {
+    background-color: rgb(245, 175, 175);
+}
+
+.lantanideo {
+    background-color: rgb(150, 225, 225);
+}
+
+.actinidio {
+    background-color: rgb(230, 190, 220);
+}
+
+/* Estado do elemento na natureza */
+
+.solido{
+    color: black;
+}
+
+.liquido{
+    color: red;
+}
+
+.gasoso{
+    color: blue;
+}
+
+.desconhecido{
+    color: grey;
+}
