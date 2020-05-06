@@ -62,9 +62,9 @@ section {
     margin: 0;
     height:7em;
 	background:rgb(0, 0, 0);	
-	border:.125rem solid;
+	border:.15rem solid;
 	border-radius:.25rem;	
-	line-height:1.25;
+	line-height:1;
 	position:relative;
 	display:flex;
 	flex-direction:column;
@@ -74,6 +74,7 @@ section {
 section:not(.mark):hover{
     transition: .2s;
     transform: scale(1.5);
+    border:.175rem solid;
     cursor: pointer;
     z-index: 2;
 }
