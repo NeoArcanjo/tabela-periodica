@@ -18,7 +18,7 @@ a:focus{
 body {
     font-family: 'Montserrat', sans-serif; 
     font-variant-position: 1em/1;
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 200, .5);
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: .65em;
@@ -120,7 +120,7 @@ th, td{
 }
 
 .mark{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 200, .5);
     border: none;
 }
 
@@ -144,23 +144,23 @@ td:before {
 /* Classes elementares */
 
 .nao-metal{
-    background-color: rgb(180, 210, 100);
+    background-image: radial-gradient(rgb(185, 221, 87), rgba(180, 210, 100, 0.7));
 }
 
 .gas-nobre {
-    background-color: rgb(100, 180, 225);
+    background-image: radial-gradient(rgba(100, 180, 225, 1), rgba(100, 180, 225, 0.7));
 }
 
 .metal-alcalino {
-    background-color: rgb(245, 200, 100);
+    background-image: radial-gradient(rgba(245, 200, 100, 1), rgba(245, 200, 100, 0.7));
 }
 
 .metal-alcalino-terroso {
-    background-color: rgb(240, 230, 90);
+    background-image: radial-gradient(rgba(240, 230, 90, 1), rgba(240, 230, 90, 0.7));
 }
 
 .semimetal {
-    background-color: rgb(110, 200, 190);
+    background-image: radial-gradient(rgba(110, 200, 190, 1), rgba(110, 200, 190, 0.7));
 }
 
 /* .semimetal:hover ~ .semimetal{
@@ -168,23 +168,24 @@ td:before {
 } */
 
 .halogenio {
-    background-color: rgb(170, 225, 255);
+    /* background-color: rgba(170, 225, 255); */
+    background-image: radial-gradient( rgba(170, 225, 255,1), rgba(170, 225, 255, 0.7));
 }
 
 .outros-metais {
-    background-color: rgb(190, 210, 210);
+    background-image: radial-gradient(rgba(190, 210, 210, 1), rgba(190, 210, 210, 0.7));
 }
 
 .metal-transicao {
-    background-color: rgb(245, 175, 175);
+    background-image: radial-gradient(rgba(245, 175, 175, 1), rgba(245, 175, 175, 0.7));
 }
 
 .lantanideo {
-    background-color: rgb(150, 225, 225);
+    background-image: radial-gradient(rgba(150, 225, 225, 1), rgba(150, 225, 225, 0.7));
 }
 
 .actinidio {
-    background-color: rgb(230, 190, 220);
+    background-image: radial-gradient(rgba(230, 190, 220, 1), rgba(230, 190, 220, 0.7));
 }
 
 /* Estado do elemento na natureza */
